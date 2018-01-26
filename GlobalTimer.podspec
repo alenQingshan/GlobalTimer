@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/wangchengqvan@gmail.com/GlobalTimer'
+  s.homepage         = 'https://github.com/cnkcq/GlobalTimer'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wangchengqvan@gmail.com' => 'chengquan.wang@ele.me' }
-  s.source           = { :git => 'https://github.com/wangchengqvan@gmail.com/GlobalTimer.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/cnkcq/GlobalTimer.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
