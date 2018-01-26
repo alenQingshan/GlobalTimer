@@ -48,6 +48,7 @@
 
 - (void)activeDog {
     [[GTimer shard] activeEventWith:@"dog"];
+    [[GTimer shard] removeEventWith:@"fourth"];
 }
 
 

@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/GlobalTimer.svg?style=flat)](http://cocoapods.org/pods/GlobalTimer)
 [![Platform](https://img.shields.io/cocoapods/p/GlobalTimer.svg?style=flat)](http://cocoapods.org/pods/GlobalTimer)
 
+![images](https://user-images.githubusercontent.com/8440220/35437284-a5b4d8e6-02cc-11e8-92c3-d349a60a0e5e.jpeg)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -40,7 +42,7 @@ pod 'GlobalTimer'
 ## :book: Usage
 
 ```Objective-C
-[[GTimer shard] scheduledWith:@"first" timeInterval:2 repeat:YES block:^(NSDictionary *userinfo) {
+    [[GTimer shard] scheduledWith:@"first" timeInterval:2 repeat:YES block:^(NSDictionary *userinfo) {
         NSLog(@"🇺🇸%@", userinfo[@"test"]);
     } userinfo:@{@"test": @"ok"}];
     
@@ -57,12 +59,13 @@ pod 'GlobalTimer'
 ```
 
 ```Objective-C
-[[GTimer shard] pauseEventWith:@"dog"];
-    NSLog(@"%@", [[GTimer shard] eventList]);
+    [[GTimer shard] pauseEventWith:@"dog"];
+        NSLog(@"%@", [[GTimer shard] eventList]);
     [[GTimer shard] activeEventWith:@"dog"];
-    - (void)removeEventWith: (NSString *_Nonnull)identifirer;
+    [[GTimer shard] removeEventWith:@"fourth"];
 ```
-
+## Reprensent
+![ti](https://user-images.githubusercontent.com/8440220/35437059-c17cdb56-02cb-11e8-9a3c-b3a5cec90be8.jpg)
 ## Author
 
 wangchengqvan@gmail.com, chengquan.wang@ele.me

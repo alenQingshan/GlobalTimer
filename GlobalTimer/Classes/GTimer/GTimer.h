@@ -15,11 +15,11 @@
 
 - (void)scheduledWith: (NSString  * _Nonnull )identifirer timeInterval: (NSTimeInterval)interval repeat:(BOOL)repeat block:(GTBlock _Nonnull )block userinfo:(NSDictionary * _Nullable)userinfo;
 
-- (void)pauseEventWith: (NSString *_Nonnull)identifirer;
+- (void)pauseEventWith: (NSString * _Nonnull)identifirer;
 
-- (void)removeEventWith: (NSString *_Nonnull)identifirer;
+- (void)removeEventWith: (NSString * _Nonnull)identifirer;
 
-- (void)activeEventWith:(NSString *_Nonnull)identifirer;
+- (void)activeEventWith:(NSString * _Nonnull)identifirer;
 
 - (NSArray<NSString *> *_Nonnull)eventList;
 
