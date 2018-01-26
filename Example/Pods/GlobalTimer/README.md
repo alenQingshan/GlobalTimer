@@ -15,14 +15,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 * Xcode
 * Objective-C
 
-## Features
-
-- [x] start a loop with an event.
-- [x] pause a specific loop.
-- [x] active a specific loop.
-- [x] remove a specific loop.
-- [ ] update a loop with a new interval
-
 ## Installation
 
 GlobalTimer is available through [CocoaPods](http://cocoapods.org). To install
