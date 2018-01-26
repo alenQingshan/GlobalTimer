@@ -1,0 +1,6 @@
+framework module GlobalTimer {
+  umbrella header "GlobalTimer-umbrella.h"
+
+  export *
+  module * { export * }
+}
