@@ -21,7 +21,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 - [x] pause a specific loop.
 - [x] active a specific loop.
 - [x] remove a specific loop.
-- [ ] update a loop with a new interval
+- [x] update a loop with a new interval
 
 ## Installation
 

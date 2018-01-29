@@ -114,6 +114,19 @@ if ($block) {\
     pthread_mutex_unlock(&_lock);
 }
 
+- (void)updateEventWith: (NSString  * _Nonnull )identifirer timeInterval: (NSTimeInterval)interval repeat:(BOOL)repeat block:(GTBlock _Nonnull )block userinfo:(NSDictionary * _Nullable)userinfo {
+    for (GEvent *event in self.events) {
+        if ([event.identifirer isEqualToString:identifirer]) {
+            event.identifirer = identifirer;
+            event.interval = interval;
+            event.repeat = repeat;
+            event.block = block;
+            event.userinfo = userinfo;
+        }
+    }
+}
+
+
 - (void)activeEventWith:(NSString *)identifirer {
     pthread_mutex_lock(&_lock);
     NSArray<GEvent *> *events = [self.events copy];
