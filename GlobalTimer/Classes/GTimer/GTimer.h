@@ -8,7 +8,6 @@
 #import <Foundation/Foundation.h>
 #import "GEvent.h"
 
-
 @interface GTimer : NSObject
 
 /**
@@ -16,7 +15,7 @@
 
  @return the GTimer object
  */
-+ (instancetype _Nonnull )shard;
++ (instancetype _Nonnull )shared;
 
 /**
  add an event that will call `block` repeatedly in specified time intervals.

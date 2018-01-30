@@ -20,17 +20,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [[GTimer shard] scheduledWith:@"first" timeInterval:2 repeat:YES block:^(NSDictionary *userinfo) {
+    [[GTimer shared] scheduledWith:@"first" timeInterval:2 repeat:YES block:^(NSDictionary *userinfo) {
         NSLog(@"🇺🇸%@", userinfo[@"test"]);
     } userinfo:@{@"test": @"ok"}];
     
-    [[GTimer shard] scheduledWith:@"second" timeInterval:5 repeat:YES block:^(NSDictionary *userinfo) {
+    [[GTimer shared] scheduledWith:@"second" timeInterval:5 repeat:YES block:^(NSDictionary *userinfo) {
         NSLog(@"🌺%@", userinfo[@"cnkcq"]);
     } userinfo:@{@"cnkcq": @"king"}];
-    [[GTimer shard] scheduledWith:@"dog" timeInterval:5 repeat:YES block:^(NSDictionary *userinfo) {
+    [[GTimer shared] scheduledWith:@"dog" timeInterval:5 repeat:YES block:^(NSDictionary *userinfo) {
         NSLog(@"🐶%@", userinfo[@"dog"]);
     } userinfo:@{@"dog": @"旺财"}];
-    [[GTimer shard] scheduledWith:@"fourth" timeInterval:10 repeat:YES block:^(NSDictionary *userinfo) {
+    [[GTimer shared] scheduledWith:@"fourth" timeInterval:10 repeat:YES block:^(NSDictionary *userinfo) {
         NSLog(@"🐱%@", userinfo[@"cat"]);
     } userinfo:@{@"cat": @"咪咪"}];
 }
@@ -42,13 +42,13 @@
 }
 
 - (void)pauseDog {
-    [[GTimer shard] pauseEventWith:@"dog"];
-    NSLog(@"%@", [[GTimer shard] eventList]);
+    [[GTimer shared] pauseEventWith:@"dog"];
+    NSLog(@"%@", [[GTimer shared] eventList]);
 }
 
 - (void)activeDog {
-    [[GTimer shard] activeEventWith:@"dog"];
-    [[GTimer shard] removeEventWith:@"fourth"];
+    [[GTimer shared] activeEventWith:@"dog"];
+    [[GTimer shared] removeEventWith:@"fourth"];
 }
 
 

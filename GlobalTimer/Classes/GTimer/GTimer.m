@@ -6,6 +6,7 @@
 //
 
 #import "GTimer.h"
+#import "GEvent.h"
 #import <libkern/OSAtomic.h>
 #import <libextobjc/EXTScope.h>
 #import <pthread.h>
@@ -63,7 +64,7 @@ if ($block) {\
 
 @synthesize tolerance = _tolerance;
 
-+ (instancetype)shard {
++ (instancetype)shared {
     static dispatch_once_t onceToken;
     static GTimer *_instance = nil;
     dispatch_once(&onceToken, ^{

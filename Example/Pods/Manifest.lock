@@ -1,5 +1,5 @@
 PODS:
-  - GlobalTimer (0.1.0):
+  - GlobalTimer (0.1.1):
     - libextobjc/EXTScope
   - libextobjc/EXTScope (0.4.1):
     - libextobjc/RuntimeExtensions
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  GlobalTimer: 6450be803b0dd70a226db1b5ebcc684438a71c9f
+  GlobalTimer: 70d6ffc9fc2d185861905fce468aa67ad33fbd6d
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
 
 PODFILE CHECKSUM: af4182f92cc2bbc7a8d13ce05148fa1dea1013db

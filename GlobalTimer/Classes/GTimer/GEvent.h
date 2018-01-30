@@ -7,9 +7,10 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^GTBlock)(NSDictionary *userinfo);
 
 @interface GEvent : NSObject
+
+typedef void(^GTBlock)(NSDictionary *userinfo);
 
 @property (nonatomic, strong) NSString *identifirer;
 
