@@ -8,8 +8,8 @@
 #import "GTimer.h"
 #import "GEvent.h"
 #import <libkern/OSAtomic.h>
-#import <libextobjc/EXTScope.h>
 #import <pthread.h>
+#import "GCD.hpp"
 
 #if !__has_feature(objc_arc)
 #error GTimer is ARC only. Either turn on ARC for the project or use -fobjc-arc flag
@@ -120,6 +120,7 @@ _Pragma("clang diagnostic pop")
     pthread_mutex_lock(&_lock);
     [self.events addObject:event];
     pthread_mutex_unlock(&_lock);
+    [self updateDefaultTimeIntervalIfNeeded];
 }
 
 - (void)updateEventWith: (NSString  * _Nonnull )identifirer timeInterval: (NSTimeInterval)interval repeat:(BOOL)repeat block:(GTBlock _Nonnull )block userinfo:(NSDictionary * _Nullable)userinfo {
@@ -131,6 +132,7 @@ _Pragma("clang diagnostic pop")
             event.userinfo = userinfo;
         }
     }
+    [self updateDefaultTimeIntervalIfNeeded];
 }
 
 
@@ -165,6 +167,22 @@ _Pragma("clang diagnostic pop")
         }
     }
     pthread_mutex_unlock(&_lock);
+    [self updateDefaultTimeIntervalIfNeeded];
+}
+
+- (void)updateDefaultTimeIntervalIfNeeded {
+    // the events count must less than 100
+    int intervals[100] = {};
+    for (int i = 0; i < self.events.count; i++) {
+        intervals[i] = (int)self.events[i].interval;
+    }
+    int gcdInterval = findGCD(intervals, sizeof(intervals)/sizeof(intervals[0]));
+    if (self.defaultTimeInterval != gcdInterval) {
+        pthread_mutex_lock(&_lock);
+        self.defaultTimeInterval = gcdInterval;
+        [self resetTimer];
+        pthread_mutex_unlock(&_lock);
+    }
 }
 
 - (void)resetTimer
@@ -196,7 +214,7 @@ _Pragma("clang diagnostic pop")
     {
         return;
     }
-    self.indexInterval += 1;
+    self.indexInterval += self.defaultTimeInterval;
     gtweakify(self);
     [self.events enumerateObjectsUsingBlock:^(GEvent * _Nonnull event, NSUInteger idx, BOOL * _Nonnull stop) {
         gtstrongify(self);

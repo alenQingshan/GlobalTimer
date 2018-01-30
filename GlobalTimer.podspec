@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GlobalTimer'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of GlobalTimer.'
 
 # This description is used to generate tags and improve search results.
@@ -30,5 +30,4 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'GlobalTimer/Classes/**/*'
 
-  s.dependency 'libextobjc/EXTScope'
 end

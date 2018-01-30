@@ -371,12 +371,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GlobalTimer_Example/Pods-GlobalTimer_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GlobalTimer/GlobalTimer.framework",
-				"${BUILT_PRODUCTS_DIR}/libextobjc/libextobjc.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GlobalTimer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libextobjc.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
