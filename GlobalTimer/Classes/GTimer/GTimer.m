@@ -34,6 +34,14 @@ if ($block) {\
     }\
 }\
 
+#define gtweakify(var) __weak typeof(var) gtweak_##var = var;
+
+#define gtstrongify(var) \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wshadow\"") \
+__strong typeof(var) var = gtweak_##var; \
+_Pragma("clang diagnostic pop")
+
 
 @interface GTimer()
 {
@@ -174,9 +182,9 @@ if ($block) {\
 - (void)schedule
 {
     [self resetTimer];
-    @weakify(self);
+    gtweakify(self);
     dispatch_source_set_event_handler(self.timer, ^{
-        @strongify(self);
+        gtstrongify(self);
         [self fire];
     });
     dispatch_resume(self.timer);
@@ -189,9 +197,9 @@ if ($block) {\
         return;
     }
     self.indexInterval += 1;
-    @weakify(self);
+    gtweakify(self);
     [self.events enumerateObjectsUsingBlock:^(GEvent * _Nonnull event, NSUInteger idx, BOOL * _Nonnull stop) {
-        @strongify(self);
+        gtstrongify(self);
         if ((NSInteger)self.indexInterval % (NSInteger)event.interval == 0 && event.isActive == YES) {
             gtexecute_block_on_main_thread(^{
                event.block(event.userinfo);
