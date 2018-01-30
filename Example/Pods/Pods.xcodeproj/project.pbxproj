@@ -7,23 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0212C37606097BD4B82BDEE4493D81F1 /* GTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A50ED2D491BF0F2C18C208227351C6 /* GTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14883F128B6F9E4FE85C0B6D349A2F09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		21DD915922DEB411072F56A6AF1ED1F2 /* GlobalTimer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B685C50E786487F602E80FD22E3890 /* GlobalTimer-dummy.m */; };
+		03F2A116C2050EE3D65349C3F2D0C7B3 /* GEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 69C4F9B15D0ED863C1A87AD719EA8DF9 /* GEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D45C08032AD381DBFC475706FE3E9A1 /* GlobalTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3320FD850FFCE17798527E81559131 /* GlobalTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		156D31138AD0780E552DA45F3D9F016B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1C4D547F4B33C4E0263FA22E9B2377C8 /* GlobalTimer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8FE43615521A16D05D30F06156396 /* GlobalTimer-dummy.m */; };
 		347E1B35F970981112CB7F4B99DAE117 /* Pods-GlobalTimer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F30FB8D8B1DFFB5DFBDC6641527776F /* Pods-GlobalTimer_Tests-dummy.m */; };
-		3A81997DBE35019116361C5BE48C37A2 /* GEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E983BC393B2F0A51B1D8EBA0AF0EFB98 /* GEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		570F2D738B1C29C68C46E94887DC1271 /* GEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D4098EDA363EAD66BBBF2B43C089AA /* GEvent.m */; };
+		3535FA9B9D683161472E118D52CE2269 /* GTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = DECFE5753E7E54E6B341F302E44754BC /* GTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60598CC57A24EDFFBA2152E200E4DB84 /* Pods-GlobalTimer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E36C245009D1EBB1C565D8BF97A5976 /* Pods-GlobalTimer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86B4564296171094A30FE8F388545E6A /* GlobalTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8866CAD3A7321A3F54DB32BA78E1E2B6 /* GlobalTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65FC9B7B03974D842429F1A978D0FDCC /* GCD.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B9039FC3769A74588FAEA820F5447E64 /* GCD.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		7364C9ECDF5ED101D6A95D7888F886F5 /* GlobalTimer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D869916B007DC695B939A80ED6E2C51 /* GlobalTimer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8589A1950E7D2C1D02DDDC91979BCC1A /* GTimer.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA2F64AFC48C303B112296D75B110F81 /* GTimer.mm */; };
 		8AF2D6500E1E7517378B6B598CA11817 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		99045166BF63C710F28A74849826D37C /* Pods-GlobalTimer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55F8648EB7C4549EE43F8238DCB394EB /* Pods-GlobalTimer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A04799B67E8B8219BCEF58CEFE29A368 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		AACFEF23202095FC00C0113F /* GCD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AACFEF21202095FC00C0113F /* GCD.cpp */; };
-		AACFEF24202095FC00C0113F /* GCD.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AACFEF22202095FC00C0113F /* GCD.hpp */; };
-		AACFEF262020970D00C0113F /* stdc++.h in Headers */ = {isa = PBXBuildFile; fileRef = AACFEF252020970C00C0113F /* stdc++.h */; };
 		B0C7BB22E13AB442A0A9D5C0B78EB9D1 /* Pods-GlobalTimer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2D15A6CDD781E453929537CE3DDF10 /* Pods-GlobalTimer_Example-dummy.m */; };
-		B3D526C067514305A96D1713F072AADC /* GlobalTimer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4E012DC467460889128F86FAB58CCD /* GlobalTimer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CACAC14F4B50A388C1403A30E90F1574 /* GTimer.mm in Sources */ = {isa = PBXBuildFile; fileRef = C16F8C3256D319567C9AE8E76C84BE5D /* GTimer.mm */; };
+		CF1925F629C41E3CEC2B542D78699D6E /* GCD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83E569F5E16797E5A96D1D82398C86AC /* GCD.cpp */; };
+		EBDE73784D3BC4D6A6EEE661F0B964AB /* GEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2907B76DCC7641F27AD115A4D5DF812B /* GEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,67 +30,66 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CD85879E5D6CEB07199988772C2F3AD2;
+			remoteGlobalIDString = 5B70DF65716ADD4578B6F013FFD01964;
 			remoteInfo = GlobalTimer;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00527AB2BBB66574E8D856413BA18902 /* Pods-GlobalTimer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlobalTimer_Example.release.xcconfig"; sourceTree = "<group>"; };
-		00AD8A31C7065DB42A6730A6178690FB /* GlobalTimer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GlobalTimer.xcconfig; sourceTree = "<group>"; };
-		27A50ED2D491BF0F2C18C208227351C6 /* GTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTimer.h; sourceTree = "<group>"; };
+		13C19528EE3A385DFB0A27230A30DB17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19FAA6988ACCC7A710DF0EA949FDA34B /* GlobalTimer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GlobalTimer.xcconfig; sourceTree = "<group>"; };
+		1D869916B007DC695B939A80ED6E2C51 /* GlobalTimer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GlobalTimer-umbrella.h"; sourceTree = "<group>"; };
+		2907B76DCC7641F27AD115A4D5DF812B /* GEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GEvent.m; sourceTree = "<group>"; };
 		2E36C245009D1EBB1C565D8BF97A5976 /* Pods-GlobalTimer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GlobalTimer_Example-umbrella.h"; sourceTree = "<group>"; };
+		3053FABFFA15C7D10EC93557D5BCB956 /* GlobalTimer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GlobalTimer.modulemap; sourceTree = "<group>"; };
 		357CA4EBFA3A492A2BCC9D0672B89281 /* Pods-GlobalTimer_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GlobalTimer_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		3D14708D48EC28BFF9616316780F8E46 /* Pods-GlobalTimer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GlobalTimer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3F30FB8D8B1DFFB5DFBDC6641527776F /* Pods-GlobalTimer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GlobalTimer_Tests-dummy.m"; sourceTree = "<group>"; };
 		55F8648EB7C4549EE43F8238DCB394EB /* Pods-GlobalTimer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GlobalTimer_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		69C4F9B15D0ED863C1A87AD719EA8DF9 /* GEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GEvent.h; sourceTree = "<group>"; };
 		6A4B56D576A6BD1908446CF069280028 /* Pods-GlobalTimer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GlobalTimer_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7149B22E1A1AEFB5542391E70A28EC1B /* Pods-GlobalTimer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GlobalTimer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		75590695042A926E9FD840C61DBB06B7 /* Pods-GlobalTimer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GlobalTimer_Example.modulemap"; sourceTree = "<group>"; };
-		7579D56D03C3BF3DCBF2E60005574A01 /* GlobalTimer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GlobalTimer.modulemap; sourceTree = "<group>"; };
 		7914CB39CBC98E97E8955AFFF069C5F3 /* Pods-GlobalTimer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GlobalTimer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7D2C5879E1FFBE3729923FB949E21CA8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80B04696E439EF06D0EA97389813F1E0 /* GlobalTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GlobalTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8866CAD3A7321A3F54DB32BA78E1E2B6 /* GlobalTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GlobalTimer.h; path = GlobalTimer/Classes/GlobalTimer.h; sourceTree = "<group>"; };
-		918A29D5238B2C24F45DA58638B82ED4 /* GlobalTimer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GlobalTimer-prefix.pch"; sourceTree = "<group>"; };
+		83E569F5E16797E5A96D1D82398C86AC /* GCD.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = GCD.cpp; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98EE3230D4D84AAA1432A29320C5FFDB /* Pods-GlobalTimer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlobalTimer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		99626ED1AE6E33B115A70E0C20D48A4A /* Pods_GlobalTimer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalTimer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B36F0564162502E7E0E9EE822AC1FF9 /* Pods-GlobalTimer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GlobalTimer_Tests.modulemap"; sourceTree = "<group>"; };
 		9B4C542980A9A27DAA16DF45CBB8637A /* Pods_GlobalTimer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalTimer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AACFEF21202095FC00C0113F /* GCD.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GCD.cpp; sourceTree = "<group>"; };
-		AACFEF22202095FC00C0113F /* GCD.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GCD.hpp; sourceTree = "<group>"; };
-		AACFEF252020970C00C0113F /* stdc++.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "stdc++.h"; sourceTree = "<group>"; };
 		ACE5C7A277D95237B6EDFD3881347197 /* Pods-GlobalTimer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlobalTimer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B326B5AE3536F50D4335ACC7372D07C3 /* Pods-GlobalTimer_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GlobalTimer_Example-resources.sh"; sourceTree = "<group>"; };
 		B84F46D793A18A966E81822E2DB1DEBA /* Pods-GlobalTimer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GlobalTimer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C16F8C3256D319567C9AE8E76C84BE5D /* GTimer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = GTimer.mm; sourceTree = "<group>"; };
+		B9039FC3769A74588FAEA820F5447E64 /* GCD.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = GCD.hpp; sourceTree = "<group>"; };
 		C2AB24740EFB9154B38D6FB75B11B0F4 /* Pods-GlobalTimer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlobalTimer_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C9D4098EDA363EAD66BBBF2B43C089AA /* GEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GEvent.m; sourceTree = "<group>"; };
+		CA2F64AFC48C303B112296D75B110F81 /* GTimer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = GTimer.mm; sourceTree = "<group>"; };
 		CB2D15A6CDD781E453929537CE3DDF10 /* Pods-GlobalTimer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GlobalTimer_Example-dummy.m"; sourceTree = "<group>"; };
 		CE482315D75D9E92D24BB1A4123DBFBF /* Pods-GlobalTimer_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GlobalTimer_Tests-resources.sh"; sourceTree = "<group>"; };
-		E0B685C50E786487F602E80FD22E3890 /* GlobalTimer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GlobalTimer-dummy.m"; sourceTree = "<group>"; };
+		D4C8FE43615521A16D05D30F06156396 /* GlobalTimer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GlobalTimer-dummy.m"; sourceTree = "<group>"; };
+		DD3320FD850FFCE17798527E81559131 /* GlobalTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GlobalTimer.h; sourceTree = "<group>"; };
+		DECFE5753E7E54E6B341F302E44754BC /* GTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTimer.h; sourceTree = "<group>"; };
 		E3AB4E0BC122D4AB68E8F86B1F80874D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E983BC393B2F0A51B1D8EBA0AF0EFB98 /* GEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GEvent.h; sourceTree = "<group>"; };
-		EE4E012DC467460889128F86FAB58CCD /* GlobalTimer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GlobalTimer-umbrella.h"; sourceTree = "<group>"; };
-		F801B07844D3D35B07C913698FD2B142 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC47615EACF5639B69C025739E5EE8D1 /* GlobalTimer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GlobalTimer-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3D124499F4128DB013A0B5A0BF919BF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156D31138AD0780E552DA45F3D9F016B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		60ECD200754C3189BCD9365AE3C25494 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8AF2D6500E1E7517378B6B598CA11817 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		61B0F75DEB45051E7FF79713242EF508 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14883F128B6F9E4FE85C0B6D349A2F09 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,29 +114,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1CA57E76926603E07332792E76B92619 /* Support Files */ = {
+		26CF32CD7761F950E443BEE28F8A2117 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7579D56D03C3BF3DCBF2E60005574A01 /* GlobalTimer.modulemap */,
-				00AD8A31C7065DB42A6730A6178690FB /* GlobalTimer.xcconfig */,
-				E0B685C50E786487F602E80FD22E3890 /* GlobalTimer-dummy.m */,
-				918A29D5238B2C24F45DA58638B82ED4 /* GlobalTimer-prefix.pch */,
-				EE4E012DC467460889128F86FAB58CCD /* GlobalTimer-umbrella.h */,
-				F801B07844D3D35B07C913698FD2B142 /* Info.plist */,
+				B392914EE48F14C341FACAE709FAFFD8 /* GlobalTimer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		386597225A9AD4780A324CE66D4479ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3053FABFFA15C7D10EC93557D5BCB956 /* GlobalTimer.modulemap */,
+				19FAA6988ACCC7A710DF0EA949FDA34B /* GlobalTimer.xcconfig */,
+				D4C8FE43615521A16D05D30F06156396 /* GlobalTimer-dummy.m */,
+				EC47615EACF5639B69C025739E5EE8D1 /* GlobalTimer-prefix.pch */,
+				1D869916B007DC695B939A80ED6E2C51 /* GlobalTimer-umbrella.h */,
+				13C19528EE3A385DFB0A27230A30DB17 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/GlobalTimer";
-			sourceTree = "<group>";
-		};
-		26146FED572DBC7894909BB1D8313888 /* GlobalTimer */ = {
-			isa = PBXGroup;
-			children = (
-				8866CAD3A7321A3F54DB32BA78E1E2B6 /* GlobalTimer.h */,
-				897B5EF93FD066F9FB4AACE0641EAF06 /* GTimer */,
-				1CA57E76926603E07332792E76B92619 /* Support Files */,
-			);
-			name = GlobalTimer;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		5E235D1E45BD35B5FCA838861FDA30D6 /* Targets Support Files */ = {
@@ -154,26 +149,21 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				C5DE796D3DA04CE55B92C7C7B82316CB /* Development Pods */,
+				26CF32CD7761F950E443BEE28F8A2117 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				0ED4262860E3588B1860D931EFE40914 /* Products */,
 				5E235D1E45BD35B5FCA838861FDA30D6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		897B5EF93FD066F9FB4AACE0641EAF06 /* GTimer */ = {
+		B392914EE48F14C341FACAE709FAFFD8 /* GlobalTimer */ = {
 			isa = PBXGroup;
 			children = (
-				AACFEF252020970C00C0113F /* stdc++.h */,
-				E983BC393B2F0A51B1D8EBA0AF0EFB98 /* GEvent.h */,
-				C9D4098EDA363EAD66BBBF2B43C089AA /* GEvent.m */,
-				27A50ED2D491BF0F2C18C208227351C6 /* GTimer.h */,
-				C16F8C3256D319567C9AE8E76C84BE5D /* GTimer.mm */,
-				AACFEF21202095FC00C0113F /* GCD.cpp */,
-				AACFEF22202095FC00C0113F /* GCD.hpp */,
+				F8361C13B2E2A5858BD3B565D134C0B7 /* GlobalTimer */,
+				386597225A9AD4780A324CE66D4479ED /* Support Files */,
 			);
-			name = GTimer;
-			path = GlobalTimer/Classes/GTimer;
+			name = GlobalTimer;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -182,14 +172,6 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C5DE796D3DA04CE55B92C7C7B82316CB /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				26146FED572DBC7894909BB1D8313888 /* GlobalTimer */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CAF2D885C76B7411FB7EB0902B8B789C /* Pods-GlobalTimer_Example */ = {
@@ -218,6 +200,28 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		D3ADE8C31EEBCAF641B99184770E1250 /* GTimer */ = {
+			isa = PBXGroup;
+			children = (
+				83E569F5E16797E5A96D1D82398C86AC /* GCD.cpp */,
+				B9039FC3769A74588FAEA820F5447E64 /* GCD.hpp */,
+				69C4F9B15D0ED863C1A87AD719EA8DF9 /* GEvent.h */,
+				2907B76DCC7641F27AD115A4D5DF812B /* GEvent.m */,
+				DECFE5753E7E54E6B341F302E44754BC /* GTimer.h */,
+				CA2F64AFC48C303B112296D75B110F81 /* GTimer.mm */,
+			);
+			path = GTimer;
+			sourceTree = "<group>";
+		};
+		D8707AC4FB61BFE563055DE84F059C30 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DD3320FD850FFCE17798527E81559131 /* GlobalTimer.h */,
+				D3ADE8C31EEBCAF641B99184770E1250 /* GTimer */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		F19CC54151480673239D37CB3C98F6CA /* Pods-GlobalTimer_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +240,14 @@
 			path = "Target Support Files/Pods-GlobalTimer_Tests";
 			sourceTree = "<group>";
 		};
+		F8361C13B2E2A5858BD3B565D134C0B7 /* GlobalTimer */ = {
+			isa = PBXGroup;
+			children = (
+				D8707AC4FB61BFE563055DE84F059C30 /* Classes */,
+			);
+			path = GlobalTimer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -247,16 +259,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A61265B0F372311DFABB0A46CE0C5C81 /* Headers */ = {
+		52A1D158C7419A5126817DB8A51AE85C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AACFEF262020970D00C0113F /* stdc++.h in Headers */,
-				3A81997DBE35019116361C5BE48C37A2 /* GEvent.h in Headers */,
-				B3D526C067514305A96D1713F072AADC /* GlobalTimer-umbrella.h in Headers */,
-				86B4564296171094A30FE8F388545E6A /* GlobalTimer.h in Headers */,
-				0212C37606097BD4B82BDEE4493D81F1 /* GTimer.h in Headers */,
-				AACFEF24202095FC00C0113F /* GCD.hpp in Headers */,
+				65FC9B7B03974D842429F1A978D0FDCC /* GCD.hpp in Headers */,
+				03F2A116C2050EE3D65349C3F2D0C7B3 /* GEvent.h in Headers */,
+				7364C9ECDF5ED101D6A95D7888F886F5 /* GlobalTimer-umbrella.h in Headers */,
+				0D45C08032AD381DBFC475706FE3E9A1 /* GlobalTimer.h in Headers */,
+				3535FA9B9D683161472E118D52CE2269 /* GTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,13 +282,13 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CD85879E5D6CEB07199988772C2F3AD2 /* GlobalTimer */ = {
+		5B70DF65716ADD4578B6F013FFD01964 /* GlobalTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02DFAEF532EBE73AF61072166EF593A1 /* Build configuration list for PBXNativeTarget "GlobalTimer" */;
+			buildConfigurationList = F0566A653698016242B3440E8CD083A3 /* Build configuration list for PBXNativeTarget "GlobalTimer" */;
 			buildPhases = (
-				2F310FFD274E1CADFD0C3FEA792B32A7 /* Sources */,
-				61B0F75DEB45051E7FF79713242EF508 /* Frameworks */,
-				A61265B0F372311DFABB0A46CE0C5C81 /* Headers */,
+				3641228D3EED5D206385A50AF4C27963 /* Sources */,
+				3D124499F4128DB013A0B5A0BF919BF6 /* Frameworks */,
+				52A1D158C7419A5126817DB8A51AE85C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -344,7 +355,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD85879E5D6CEB07199988772C2F3AD2 /* GlobalTimer */,
+				5B70DF65716ADD4578B6F013FFD01964 /* GlobalTimer */,
 				D71984AB879E52A46979ED0A99B8F541 /* Pods-GlobalTimer_Example */,
 				D386C88166759CDD4698AEED48CB7F50 /* Pods-GlobalTimer_Tests */,
 			);
@@ -352,14 +363,14 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2F310FFD274E1CADFD0C3FEA792B32A7 /* Sources */ = {
+		3641228D3EED5D206385A50AF4C27963 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570F2D738B1C29C68C46E94887DC1271 /* GEvent.m in Sources */,
-				21DD915922DEB411072F56A6AF1ED1F2 /* GlobalTimer-dummy.m in Sources */,
-				AACFEF23202095FC00C0113F /* GCD.cpp in Sources */,
-				CACAC14F4B50A388C1403A30E90F1574 /* GTimer.mm in Sources */,
+				CF1925F629C41E3CEC2B542D78699D6E /* GCD.cpp in Sources */,
+				EBDE73784D3BC4D6A6EEE661F0B964AB /* GEvent.m in Sources */,
+				1C4D547F4B33C4E0263FA22E9B2377C8 /* GlobalTimer-dummy.m in Sources */,
+				8589A1950E7D2C1D02DDDC91979BCC1A /* GTimer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,12 +396,44 @@
 		1275A4349CF9F33AA4846A7CB6F06C51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GlobalTimer;
-			target = CD85879E5D6CEB07199988772C2F3AD2 /* GlobalTimer */;
+			target = 5B70DF65716ADD4578B6F013FFD01964 /* GlobalTimer */;
 			targetProxy = 3948682773BEE443B05436EA4FA2514A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1191185470E8FDBC622EC73D68446B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19FAA6988ACCC7A710DF0EA949FDA34B /* GlobalTimer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GlobalTimer/GlobalTimer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GlobalTimer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GlobalTimer/GlobalTimer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GlobalTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -435,6 +478,38 @@
 			};
 			name = Release;
 		};
+		236EA3E0C570ED2BFB0507501C1DF7FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19FAA6988ACCC7A710DF0EA949FDA34B /* GlobalTimer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GlobalTimer/GlobalTimer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GlobalTimer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GlobalTimer/GlobalTimer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GlobalTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		261EAFD51E7004B4F2BE1ADC5D90261E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00527AB2BBB66574E8D856413BA18902 /* Pods-GlobalTimer_Example.release.xcconfig */;
@@ -465,39 +540,6 @@
 				PRODUCT_NAME = Pods_GlobalTimer_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		35762D6F7C63C0F807A8D627B455BC5D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00AD8A31C7065DB42A6730A6178690FB /* GlobalTimer.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GlobalTimer/GlobalTimer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GlobalTimer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GlobalTimer/GlobalTimer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = GlobalTimer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -576,39 +618,6 @@
 			};
 			name = Release;
 		};
-		B606D6EB936E12717F204AEF14510A4D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00AD8A31C7065DB42A6730A6178690FB /* GlobalTimer.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GlobalTimer/GlobalTimer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GlobalTimer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GlobalTimer/GlobalTimer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = GlobalTimer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		C204E0627B12AB2F8A40FF2FB7B5ACEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98EE3230D4D84AAA1432A29320C5FFDB /* Pods-GlobalTimer_Example.debug.xcconfig */;
@@ -645,7 +654,7 @@
 			};
 			name = Debug;
 		};
-		EED546DBB23FC32035C9BDC4E22B30BD /* Debug */ = {
+		D7B1487F48E36BAD2CEF0AFCA4908B67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -689,7 +698,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -697,19 +705,10 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02DFAEF532EBE73AF61072166EF593A1 /* Build configuration list for PBXNativeTarget "GlobalTimer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B606D6EB936E12717F204AEF14510A4D /* Debug */,
-				35762D6F7C63C0F807A8D627B455BC5D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EED546DBB23FC32035C9BDC4E22B30BD /* Debug */,
+				D7B1487F48E36BAD2CEF0AFCA4908B67 /* Debug */,
 				157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -729,6 +728,15 @@
 			buildConfigurations = (
 				C204E0627B12AB2F8A40FF2FB7B5ACEF /* Debug */,
 				261EAFD51E7004B4F2BE1ADC5D90261E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0566A653698016242B3440E8CD083A3 /* Build configuration list for PBXNativeTarget "GlobalTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				236EA3E0C570ED2BFB0507501C1DF7FF /* Debug */,
+				1191185470E8FDBC622EC73D68446B45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

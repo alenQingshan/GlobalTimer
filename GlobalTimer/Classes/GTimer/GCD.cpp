@@ -6,7 +6,6 @@
 //
 
 #include "GCD.hpp"
-#include "stdc++.h"
 using namespace std;
 
 // C++ program to find GCD of two or

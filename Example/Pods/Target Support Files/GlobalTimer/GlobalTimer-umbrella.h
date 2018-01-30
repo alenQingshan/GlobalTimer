@@ -11,6 +11,7 @@
 #endif
 
 #import "GlobalTimer.h"
+#import "GCD.hpp"
 #import "GEvent.h"
 #import "GTimer.h"
 
