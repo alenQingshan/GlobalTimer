@@ -23,17 +23,6 @@
 #define gt_release_gcd_object(object) dispatch_release(object)
 #endif
 
-#define gtexecute_block_on_main_thread($block)\
-if ($block) {\
-    if ([[NSThread currentThread] isMainThread]) {\
-        $block();\
-    } else {\
-        dispatch_sync(dispatch_get_main_queue(), ^{\
-            $block();\
-        });\
-    }\
-}\
-
 #define gtweakify(var) __weak typeof(var) gtweak_##var = var;
 
 #define gtstrongify(var) \
@@ -216,12 +205,10 @@ _Pragma("clang diagnostic pop")
     }
     self.indexInterval += self.defaultTimeInterval;
     gtweakify(self);
-    [self.events enumerateObjectsUsingBlock:^(GEvent * _Nonnull event, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.events enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(GEvent * _Nonnull event, NSUInteger idx, BOOL * _Nonnull stop) {
         gtstrongify(self);
         if ((NSInteger)self.indexInterval % (NSInteger)event.interval == 0 && event.isActive == YES) {
-            gtexecute_block_on_main_thread(^{
-               event.block(event.userinfo);
-            });
+            event.block(event.userinfo);
         }
     }];
 }
