@@ -7,10 +7,21 @@
 
 #import "GEvent.h"
 
+@interface GEvent()
+
+@property (nonatomic, strong) NSString *identifirer;
+
+@end
 
 @implementation GEvent
 
-- (instancetype)init
++ (instancetype)eventWith: (NSString *)identifirer {
+    GEvent *event = [[self alloc] init];
+    event.identifirer = identifirer;
+    return event;
+}
+
+- (instancetype)init 
 {
     self = [super init];
     if (self) {

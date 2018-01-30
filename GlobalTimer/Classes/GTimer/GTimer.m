@@ -104,8 +104,7 @@ if ($block) {\
     if (!repeat) {
         [self fire];
     }
-    GEvent *event = [[GEvent alloc] init];
-    event.identifirer = identifirer;
+    GEvent *event = [GEvent eventWith:identifirer];
     event.interval = interval;
     event.block = block;
     event.userinfo = userinfo;
@@ -118,7 +117,6 @@ if ($block) {\
 - (void)updateEventWith: (NSString  * _Nonnull )identifirer timeInterval: (NSTimeInterval)interval repeat:(BOOL)repeat block:(GTBlock _Nonnull )block userinfo:(NSDictionary * _Nullable)userinfo {
     for (GEvent *event in self.events) {
         if ([event.identifirer isEqualToString:identifirer]) {
-            event.identifirer = identifirer;
             event.interval = interval;
             event.repeat = repeat;
             event.block = block;
@@ -190,7 +188,7 @@ if ($block) {\
     {
         return;
     }
-    _indexInterval += 1;
+    self.indexInterval += 1;
     @weakify(self);
     [self.events enumerateObjectsUsingBlock:^(GEvent * _Nonnull event, NSUInteger idx, BOOL * _Nonnull stop) {
         @strongify(self);

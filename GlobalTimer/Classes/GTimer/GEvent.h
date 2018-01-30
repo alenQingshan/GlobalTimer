@@ -12,7 +12,7 @@
 
 typedef void(^GTBlock)(NSDictionary *userinfo);
 
-@property (nonatomic, strong) NSString *identifirer;
+@property (nonatomic, strong, readonly) NSString *identifirer;
 
 @property (nonatomic, assign) NSTimeInterval interval;
 
@@ -23,5 +23,9 @@ typedef void(^GTBlock)(NSDictionary *userinfo);
 @property (nonatomic, strong) NSDictionary *userinfo;
 
 @property (nonatomic, assign) BOOL isActive;
+
++ (instancetype)eventWith: (NSString *)identifirer;
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
