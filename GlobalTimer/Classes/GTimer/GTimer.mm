@@ -41,7 +41,9 @@ _Pragma("clang diagnostic pop")
 }
 
 @property (nonatomic, assign) NSTimeInterval defaultTimeInterval;
+
 @property (nonatomic, strong) NSMutableArray<GEvent *> *events;
+
 @property (nonatomic, assign) BOOL repeats;
 
 @property (nonatomic, gt_gcd_property_qualifier) dispatch_queue_t privateSerialQueue;
