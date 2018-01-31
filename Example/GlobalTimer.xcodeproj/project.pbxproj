@@ -251,6 +251,7 @@
 				ORGANIZATIONNAME = "wangchengqvan@gmail.com";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
+						DevelopmentTeam = J6VXBG3P5H;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -562,6 +563,7 @@
 			baseConfigurationReference = B0BF3DF44CB5D56F342D74E5 /* Pods-GlobalTimer_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J6VXBG3P5H;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GlobalTimer/GlobalTimer-Prefix.pch";
 				INFOPLIST_FILE = "GlobalTimer/GlobalTimer-Info.plist";
@@ -577,6 +579,7 @@
 			baseConfigurationReference = D8A217692E3D613A0E2A18D3 /* Pods-GlobalTimer_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J6VXBG3P5H;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GlobalTimer/GlobalTimer-Prefix.pch";
 				INFOPLIST_FILE = "GlobalTimer/GlobalTimer-Info.plist";
