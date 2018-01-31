@@ -19,25 +19,25 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-//    [[GTimer shared] scheduledWith:@"first" timeInterval:3 repeat:YES block:^(NSDictionary *userinfo) {
-//        NSLog(@"🇺🇸%@", userinfo[@"test"]);
-//    } userinfo:@{@"test": @"ok"}];
-//
-//    [[GTimer shared] scheduledWith:@"second" timeInterval:6 repeat:YES block:^(NSDictionary *userinfo) {
-//        NSLog(@"🌺%@", userinfo[@"cnkcq"]);
-//    } userinfo:@{@"cnkcq": @"king"}];
-//    [[GTimer shared] scheduledWith:@"dog" timeInterval:9 repeat:YES block:^(NSDictionary *userinfo) {
-//        NSLog(@"🐶%@", userinfo[@"dog"]);
-//    } userinfo:@{@"dog": @"旺财"}];
-//    [[GTimer shared] scheduledWith:@"fourth" timeInterval:12 repeat:YES block:^(NSDictionary *userinfo) {
-//        NSLog(@"🐱%@", userinfo[@"cat"]);
-//    } userinfo:@{@"cat": @"咪咪"}];
+    [[GTimer shared] scheduledWith:@"first" timeInterval:3 repeat:YES block:^(NSDictionary *userinfo) {
+        NSLog(@"🇺🇸%@", userinfo[@"test"]);
+    } userinfo:@{@"test": @"ok"}];
+
+    [[GTimer shared] scheduledWith:@"second" timeInterval:6 repeat:YES block:^(NSDictionary *userinfo) {
+        NSLog(@"🌺%@", userinfo[@"cnkcq"]);
+    } userinfo:@{@"cnkcq": @"king"}];
+    [[GTimer shared] scheduledWith:@"dog" timeInterval:9 repeat:YES block:^(NSDictionary *userinfo) {
+        NSLog(@"🐶%@", userinfo[@"dog"]);
+    } userinfo:@{@"dog": @"旺财"}];
+    [[GTimer shared] scheduledWith:@"fourth" timeInterval:12 repeat:YES block:^(NSDictionary *userinfo) {
+        NSLog(@"🐱%@", userinfo[@"cat"]);
+    } userinfo:@{@"cat": @"咪咪"}];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"pausedog" style:UIBarButtonItemStylePlain target:self action:@selector(pauseDog)];
-//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"activedog" style:UIBarButtonItemStylePlain target:self action:@selector(activeDog)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"pausedog" style:UIBarButtonItemStylePlain target:self action:@selector(pauseDog)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"activedog" style:UIBarButtonItemStylePlain target:self action:@selector(activeDog)];
 }
 
 - (void)pauseDog {

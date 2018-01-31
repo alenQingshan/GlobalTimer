@@ -85,8 +85,8 @@ _Pragma("clang diagnostic pop")
         self.defaultTimeInterval = 1;
         self.events = [NSMutableArray array];
         self.privateSerialQueue = nil;
-        NSString *privateQueueName = [NSString stringWithFormat:@"com.cnkcq.globaltimer.%p", self];
-        self.privateSerialQueue = dispatch_queue_create([privateQueueName cStringUsingEncoding:NSASCIIStringEncoding], DISPATCH_QUEUE_SERIAL);
+        NSString *privateQueueName = [NSString stringWithFormat:@"com.globaltimer.%p", self];
+        self.privateSerialQueue = dispatch_queue_create([privateQueueName cStringUsingEncoding:NSASCIIStringEncoding], DISPATCH_QUEUE_CONCURRENT);
         dispatch_set_target_queue(self.privateSerialQueue, nil);
         self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER,
                                             0,
