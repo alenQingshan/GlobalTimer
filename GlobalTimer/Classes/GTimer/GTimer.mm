@@ -115,7 +115,8 @@ _Pragma("clang diagnostic pop")
 }
 
 - (void)updateEventWith: (NSString  * _Nonnull )identifirer timeInterval: (NSTimeInterval)interval repeat:(BOOL)repeat block:(GTBlock _Nonnull )block userinfo:(NSDictionary * _Nullable)userinfo {
-    for (GEvent *event in self.events) {
+    NSArray<GEvent *> *tempEvents = [self.events copy];
+    for (GEvent *event in tempEvents) {
         if ([event.identifirer isEqualToString:identifirer]) {
             event.interval = interval;
             event.repeat = repeat;
@@ -129,8 +130,8 @@ _Pragma("clang diagnostic pop")
 
 - (void)activeEventWith:(NSString *)identifirer {
     pthread_mutex_lock(&_lock);
-    NSArray<GEvent *> *events = [self.events copy];
-    for (GEvent *event in events) {
+    NSArray<GEvent *> *tempEvents = [self.events copy];
+    for (GEvent *event in tempEvents) {
         if ([event.identifirer isEqualToString:identifirer]) {
             event.isActive = YES;
         }
@@ -140,8 +141,8 @@ _Pragma("clang diagnostic pop")
 
 - (void)pauseEventWith:(NSString *)identifirer {
     pthread_mutex_lock(&_lock);
-    NSArray<GEvent *> *events = [self.events copy];
-    for (GEvent *event in events) {
+    NSArray<GEvent *> *tempEvents = [self.events copy];
+    for (GEvent *event in tempEvents) {
         if ([event.identifirer isEqualToString:identifirer]) {
             event.isActive = NO;
         }
@@ -151,8 +152,8 @@ _Pragma("clang diagnostic pop")
 
 - (void)removeEventWith:(NSString *)identifirer {
     pthread_mutex_lock(&_lock);
-    NSArray<GEvent *> *events = [self.events copy];
-    for (GEvent *event in events) {
+    NSArray<GEvent *> *tempEvents = [self.events copy];
+    for (GEvent *event in tempEvents) {
         if ([event.identifirer isEqualToString:identifirer]) {
             [self.events removeObject:event];
         }
@@ -206,8 +207,9 @@ _Pragma("clang diagnostic pop")
         return;
     }
     self.indexInterval += self.defaultTimeInterval;
+    NSArray<GEvent *> *tempEvents = [self.events copy];
     gtweakify(self);
-    [self.events enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(GEvent * _Nonnull event, NSUInteger idx, BOOL * _Nonnull stop) {
+    [tempEvents enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(GEvent * _Nonnull event, NSUInteger idx, BOOL * _Nonnull stop) {
         gtstrongify(self);
         if ((NSInteger)self.indexInterval % (NSInteger)event.interval == 0 && event.isActive == YES) {
             event.block(event.userinfo);
@@ -230,10 +232,11 @@ _Pragma("clang diagnostic pop")
 
 - (NSArray<NSString *> *)eventList {
     NSMutableArray<NSString *> *eventLists = [NSMutableArray array];
-    for (GEvent *event in self.events) {
+    NSArray<GEvent *> *tempEvents = [self.events copy];
+    for (GEvent *event in tempEvents) {
         [eventLists addObject:event.identifirer];
     }
-    return eventLists;
+    return [eventLists copy];
 }
 
 -(void)dealloc {

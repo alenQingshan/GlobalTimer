@@ -19,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    // will spend 0.1 mb memory
     [[GTimer shared] scheduledWith:@"first" timeInterval:3 repeat:YES block:^(NSDictionary *userinfo) {
         NSLog(@"🇺🇸%@", userinfo[@"test"]);
     } userinfo:@{@"test": @"ok"}];
