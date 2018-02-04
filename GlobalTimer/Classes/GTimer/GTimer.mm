@@ -206,7 +206,9 @@ _Pragma("clang diagnostic pop")
     {
         return;
     }
+    pthread_mutex_lock(&_lock);
     self.indexInterval += self.defaultTimeInterval;
+    pthread_mutex_unlock(&_lock);
     NSArray<GEvent *> *tempEvents = [self.events copy];
     gtweakify(self);
     [tempEvents enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(GEvent * _Nonnull event, NSUInteger idx, BOOL * _Nonnull stop) {
