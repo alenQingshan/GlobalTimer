@@ -5,7 +5,7 @@
 >
 > Please remove this line and everything above it before submitting.
 
-* [ ] I've read, understood, and done my best to follow the [*CONTRIBUTING guidelines](https://github.com/Alamofire/Alamofire/blob/master/CONTRIBUTING.md).
+* [ ] I've read, understood, and done my best to follow the steps.
 
 ## What did you do?
 
