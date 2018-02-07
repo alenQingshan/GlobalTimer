@@ -20,17 +20,17 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     // will spend 0.1 mb memory
-    [[GTimer shared] scheduledWith:@"first" timeInterval:3 repeat:YES block:^(NSDictionary *userinfo) {
+    [[GTimer shared] scheduledWith:@"first" timeInterval:1 repeat:YES block:^(NSDictionary *userinfo) {
         NSLog(@"🇺🇸%@", userinfo[@"test"]);
     } userinfo:@{@"test": @"ok"}];
 
-    [[GTimer shared] scheduledWith:@"second" timeInterval:6 repeat:YES block:^(NSDictionary *userinfo) {
+    [[GTimer shared] scheduledWith:@"second" timeInterval:3 repeat:YES block:^(NSDictionary *userinfo) {
         NSLog(@"🌺%@", userinfo[@"cnkcq"]);
     } userinfo:@{@"cnkcq": @"king"}];
-    [[GTimer shared] scheduledWith:@"dog" timeInterval:9 repeat:YES block:^(NSDictionary *userinfo) {
+    [[GTimer shared] scheduledWith:@"dog" timeInterval:6 repeat:YES block:^(NSDictionary *userinfo) {
         NSLog(@"🐶%@", userinfo[@"dog"]);
     } userinfo:@{@"dog": @"旺财"}];
-    [[GTimer shared] scheduledWith:@"fourth" timeInterval:12 repeat:YES block:^(NSDictionary *userinfo) {
+    [[GTimer shared] scheduledWith:@"fourth" timeInterval:9 repeat:YES block:^(NSDictionary *userinfo) {
         NSLog(@"🐱%@", userinfo[@"cat"]);
     } userinfo:@{@"cat": @"咪咪"}];
 }

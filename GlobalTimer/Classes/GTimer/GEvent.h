@@ -16,6 +16,8 @@ typedef void(^GTBlock)(NSDictionary *userinfo);
 
 @property (nonatomic, assign) NSTimeInterval interval;
 
+@property (nonatomic, assign) NSTimeInterval creatAt;
+
 @property (nonatomic, copy) GTBlock block;
 
 @property (nonatomic, assign) BOOL repeat;

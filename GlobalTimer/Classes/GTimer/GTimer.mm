@@ -100,11 +100,13 @@ _Pragma("clang diagnostic pop")
 }
 
 - (void)scheduledWith: (NSString *)identifirer timeInterval: (NSTimeInterval)interval repeat:(BOOL)repeat block:(GTBlock)block userinfo:(NSDictionary *)userinfo {
+    block(userinfo);
     if (!repeat) {
-        [self fire];
+        return;
     }
     GEvent *event = [GEvent eventWith:identifirer];
     event.interval = interval;
+    event.creatAt = self.indexInterval;
     event.block = block;
     event.userinfo = userinfo;
     event.repeat = repeat;
@@ -214,7 +216,7 @@ _Pragma("clang diagnostic pop")
         gtweakify(self);
         [tempEvents enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(GEvent * _Nonnull event, NSUInteger idx, BOOL * _Nonnull stop) {
             gtstrongify(self);
-            if ((NSInteger)self.indexInterval % (NSInteger)event.interval == 0 && event.isActive == YES) {
+            if ((NSInteger)(self.indexInterval - event.creatAt) % (NSInteger)event.interval == 0 && event.isActive == YES) {
                 event.block(event.userinfo);
             }
         }];
