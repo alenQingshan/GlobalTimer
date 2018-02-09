@@ -95,12 +95,14 @@ _Pragma("clang diagnostic pop")
                                             0,
                                             self.privateSerialQueue);
         [self schedule];
-
+        
     }
 }
 
 - (void)scheduledWith: (NSString *)identifirer timeInterval: (NSTimeInterval)interval repeat:(BOOL)repeat block:(GTBlock)block userinfo:(NSDictionary *)userinfo {
-    block(userinfo);
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        block(userinfo);
+    });
     if (!repeat) {
         return;
     }
@@ -165,12 +167,13 @@ _Pragma("clang diagnostic pop")
 }
 
 - (void)updateDefaultTimeIntervalIfNeeded {
-    // the events count must less than 100
-    int intervals[100] = {};
+    NSArray<GEvent *> *tempEvents = [self.events copy];
+    int count = (int)[tempEvents count];
+    int intervals[count];
     for (int i = 0; i < self.events.count; i++) {
-        intervals[i] = (int)self.events[i].interval;
+        intervals[i] = (int)tempEvents[i].interval;
     }
-    int gcdInterval = findGCD(intervals, sizeof(intervals)/sizeof(intervals[0]));
+    int gcdInterval = findGCD(intervals, (int)(sizeof(intervals)/sizeof(intervals[0])));
     if (self.defaultTimeInterval != gcdInterval) {
         pthread_mutex_lock(&_lock);
         self.defaultTimeInterval = gcdInterval;
@@ -184,10 +187,10 @@ _Pragma("clang diagnostic pop")
     int64_t intervalInNanoseconds = (int64_t)(self.defaultTimeInterval * NSEC_PER_SEC);
     int64_t toleranceInNanoseconds = (int64_t)(self.tolerance * NSEC_PER_SEC);
     dispatch_source_set_timer(
-                                  self.timer,
-                                  dispatch_time(DISPATCH_TIME_NOW, intervalInNanoseconds),
-                                  (uint64_t)intervalInNanoseconds,
-                                  toleranceInNanoseconds
+                              self.timer,
+                              dispatch_time(DISPATCH_TIME_NOW, intervalInNanoseconds),
+                              (uint64_t)intervalInNanoseconds,
+                              toleranceInNanoseconds
                               );
 }
 
@@ -245,8 +248,23 @@ _Pragma("clang diagnostic pop")
     return [eventLists copy];
 }
 
+- (NSInteger)ocgcdWith: (NSInteger)a b: (NSInteger)b {
+    if (a == 0)
+        return b;
+    return [self ocgcdWith:b%a b:a];
+}
+
+- (NSInteger)arraygcd: (NSArray *)array n: (NSInteger)n {
+    NSInteger result = (NSInteger)array[0];
+    for (NSInteger i=1; i<n; i++) {
+        result = [self ocgcdWith: (NSInteger)array[i] b:result];
+    }
+    return result;
+}
+
 -(void)dealloc {
     [self invalidate];
 }
 
 @end
+
